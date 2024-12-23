@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Fictif</title>
+    <!-- Lien vers le CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Personnalisation de la section héros */
+        .hero-section {
+            height: 100vh; /* Pleine hauteur de la fenêtre */
+            background-image: url('https://source.unsplash.com/1600x900/?food,plate'); /* Image d'arrière-plan */
+            background-size: cover; /* Ajuste l'image pour couvrir toute la section */
+            background-position: center; /* Centre l'image */
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff; /* Texte blanc pour le contraste */
+            text-shadow: 2px 2px 5px rgba(48, 29, 223, 0.7); /* Ombre pour le texte */
+        }
+        .hero-title {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .hero-subtitle {
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+    color: #4d2fd4; /* Couleur par défaut du texte */
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 5px; /* Ajoute un effet arrondi */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff; /* Couleur du texte au survol */
+    background-color: #aeb1a7; /* Couleur d'arrière-plan au survol */
+}
+
+.card-img-top {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .card-img-top:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <!-- Nom du restaurant -->
+            <a class="navbar-brand" href="#">Restaurant Capitole</a>
+
+            <!-- Bouton pour mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu de navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a id="Accueil" class="nav-link active" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="Menu" class="nav-link active" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="A propos de nous" class="nav-link active" href="#about">A propos de nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="Contact" class="nav-link active" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<section id="accueil"  class="hero-section" style="background-image: url(./style/assets/poulet\ assiette\ filet.jpg);">
+    <div class="overlay"></div>
+    <div class="hero-content container">
+        <h1 class="display-4">Découvrez notre plat délicieux</h1>
+        <p class="lead">Savourez le meilleur de la cuisine authentique Africaine avec des ingrédients frais et de qualité au restaurant capitole.</p>
+        <a href="#menu" class="btn btn-primary btn-lg">Voir le menu</a>
+    </div>
+</section>
+
+<section id="menu" class="container my-5">
+    <h2 class="text-center mb-4">Notre Menu</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <h1>ALIMENTS TARTES</h1>
+                <img src="./style/assets/aliment tarde.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Plat 1</h5>
+                    <p class="card-text">Aliments aux tartes.</p>
+                </div>
+                <div class="card-footer">
+                    <p class="text-center fw-bold">Prix :<span class="bg-primary text-light p-1 rounded-3 bg-gradient">5000 fcfa</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <h1>FOI DE POULET</h1>
+                <img src="./style/assets/foie de poule.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Plat 2</h5>
+                    <p class="card-text">Foi de poulet.</p>
+                </div>
+                <div class="card-footer">
+                    <p class="text-center fw-bold">Prix :<span class="bg-primary text-light p-1 rounded-3 bg-gradient">10000 fcfa</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <h1>POULET FRIT</h1>
+                <img src="./style/assets/poulet frit alimentaire.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Plat 3</h5>
+                    <p class="card-text">poulet frit alimentaire.</p>
+                </div>
+                <div class="card-footer">
+                    <p class="text-center fw-bold">Prix :<span class="bg-primary text-light p-1 rounded-3 bg-gradient">8500 fcfa</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <h1>KEDJENOU</h1>
+                <img src="./style/assets/Soupe de poulet kedjenou.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Plat 4</h5>
+                    <p class="card-text">Soupe de poulet kedjenou.</p>
+                </div>
+                <div class="card-footer">
+                    <p class="text-center fw-bold">Prix :<span class="bg-primary text-light p-1 rounded-3 bg-gradient">13000 fcfa</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <h1>SPAGUETTI</h1>
+                <img src="./style/assets/spaguetti aux crevette et aux legumes.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Plat 5</h5>
+                    <p class="card-text">spaguetti aux crevette et aux legumes.</p>
+                </div>
+                <div class="card-footer">
+                    <p class="text-center fw-bold">Prix :<span class="bg-primary text-light p-1 rounded-3 bg-gradient">8000 fcfa</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <h1>PATE FUSILI</h1>
+                <img src="./style/assets/pate fusili au blé complet et legumes.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Plat 6</h5>
+                    <p class="card-text">pate fusili au blé complet et legumes.</p>
+                </div>
+                <div class="card-footer">
+                    <p class="text-center fw-bold">Prix :<span class="bg-primary text-light p-1 rounded-3 bg-gradient">6500 fcfa</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ligne (ligne ) pour contenir les colonnes --> 
+<section id="about" class="container">  
+    <div class="row">
+         <!-- Première colonne --> 
+          <h1 class="text-center mb-4">A propos de nous</h1>
+        <div class="col-md-6 bg-primary text-white p-3"> 
+            <h3>Information sur la restauration</h3> 
+            <p>
+                Situé à Abidjan Cocody, à 3,3 km du club de golf Ivoire,  
+                L'équipe cuisine du Capitol Hotel vous souhaite une bonne année ! 
+                Nous avons hâte de vous régaler avec nos délicieux plats.
+                 Bonne et hereuse année 2025 à tous ! 🍲👨‍🍳
+                 Le restaurant est le lieu de restauration emblématique du Capitol Hotel,
+                 servant le petit-déjeuner, le thé de l'après-midi,et un service du soir complété. </p> 
+        </div> 
+        <!-- Deuxième colonne --> 
+        <div class="col-md-6 bg-secondary text-white p-3">
+             <h3>Restaurant Capitole</h3> 
+             <p>
+                <img src="./style/assets/Restaurant.jpeg" alt="" height="300px" width="400px">
+             </p>
+        </div> 
+
+    </div > 
+</section>
+
+<section id="contact" class="container mt-5">
+    <h2 class="text-center mb-4">Contactez-nous</h2>
+    <form>
+    <!-- Champ Nom -->
+    <div class="mb-3">
+    <label for="name" class="form-label">Nom</label>
+    <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+    </div>
+          
+    <!-- Champ Email -->
+          
+    <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="Votre adresse email" required>
+    </div>
+
+    <!-- Champ Message -->
+    <div class="mb-3">
+    <label for="message" class="form-label">Message</label>
+    <textarea class="form-control" id="message" rows="5" placeholder="Votre message" required></textarea>
+    </div>
+    
+    <!-- Bouton d'envoi -->
+    <button type="submit" class="btn btn-primary w-100 btn-spacing mb-3">Envoyer</button>
+         
+    </form>
+</section>
+
+    <!-- Pied de page -->
+    <footer class="bg-dark text-center text-white py-4">
+     <div class="container">         
+        <p class="mb-2">&copy; 2024 Restaurant Capitole. Tous droits réservés.</p>  
+        <p>Conçu par Laurent Abissa</p>  
+                     
+        <!-- Icônes des médias sociaux -->
+        <div>
+        <a href="https://facebook.com" class="text-white mx-2" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook fa-lg"></i>            
+        </a>
+        <a href="https://twitter.com" class="text-white mx-2" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <a href="https://instagram.com" class="text-white mx-2" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram fa-lg"></i>
+        </a> 
+        <a href="https://linkedin.com" class="text-white mx-2" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin fa-lg"></i> 
+        </a>
+        </div>
+     </div>
+    </footer>
+
+    <!-- Lien vers le JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
